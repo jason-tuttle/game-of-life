@@ -74,13 +74,15 @@ class App extends Component {
     return (
       <div>
         <h1>Game Of Life</h1>
-        {grid.map((row, y) =>
-          <div key={y} className="row">
-            {row.map((cell, x) =>
-              <div key={x} className={`cell ${cell}`} onClick={this.onCheck(x, y)} ></div>
-            )}
-          </div>
-        )}
+        <div className="grid">
+          {grid.map((row, y) =>
+            <div key={y} className="row">
+              {row.map((cell, x) =>
+                <div key={x} className={`cell ${cell}`} onClick={this.onCheck(x, y)} ></div>
+              )}
+            </div>
+          )}
+        </div>
         <button onClick={this.play} >{'▶︎'}</button>
         <button onClick={this.pause}>{'◼︎'}</button>
         <button onClick={this.reset}>RESET</button>

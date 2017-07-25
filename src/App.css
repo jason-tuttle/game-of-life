@@ -1,12 +1,15 @@
-input[type="checkbox"] {
-  margin: 0;
-  padding: 0;
-  background-color: black;
+body {
+  padding: 50px;
+  color: white;
+  background: linear-gradient( black, darkgray, black);
 }
-input[type="checkbox"]:checked {
-  background-color: red;
-  color: red;
+
+.grid {
+  width: auto;
+  margin: 20px 0;
+  padding: 20px 0;
 }
+
 .row {
   margin: 0;
   padding: 0;
@@ -26,4 +29,14 @@ input[type="checkbox"]:checked {
 
 .true {
   background-color: red;
+}
+
+button {
+  font-size: 1em;
+  color: white;
+  background-color: #085D96;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px white;
+  margin-right: 5px;
 }
