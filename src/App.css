@@ -1,0 +1,29 @@
+input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+input[type="checkbox"]:checked {
+  background-color: red;
+  color: red;
+}
+.row {
+  margin: 0;
+  padding: 0;
+  height: 2vw;
+}
+
+.cell {
+  margin: 0;
+  padding: 0;
+  line-height: 2vw;
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+  background-color: black;
+  border: 1px solid gray;
+}
+
+.true {
+  background-color: red;
+}
